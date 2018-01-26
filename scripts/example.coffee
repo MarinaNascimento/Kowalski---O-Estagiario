@@ -10,8 +10,39 @@
 
 module.exports = (robot) ->
 
-  # robot.hear /badger/i, (res) ->
-  #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+  robot.hear /badger/i, (res) ->
+     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+	 
+  robot.hear /Oi/i, (res) ->
+     res.emote "Oi, eu sou um bot =D"
+  
+  robot.hear /Olá/i, (res) ->
+     res.emote "Oi, eu sou um bot =D"
+	 
+  robot.hear /Qual o seu nome?/i, (res) ->
+     res.emote "Pode me chamar de estagiario. Estou aqui para ajudar"
+	 
+  robot.hear /Quem desenvolveu você?/i, (res) ->
+     res.emote "Eu fui desenvolvido pela Yaman"
+	 
+  robot.hear /Relatório/i, (res) ->
+     res.emote "Estarei apto para fazer isso em alguns dias"
+	 
+  robot.hear /Gráfico/i, (res) ->
+     res.emote "Estarei apto para fazer isso em alguns dias"
+	 
+  robot.hear /Onde vamos almoçar/i, (res) ->
+     res.emote "Vamos comer pastel!"
+	 
+  robot.hear /Bom dia/i, (res) ->
+     res.emote "é a primeira vez que vem a minha casa e nem me trás uma chícara de café?"
+	 
+  robot.hear /estou saindo/i, (res) ->
+     res.emote "Vida longa e próspera"
+	 
+  robot.hear /Tchau/i, (res) ->
+     res.emote "até mais, que a força esteja com você"
+  
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
@@ -20,8 +51,6 @@ module.exports = (robot) ->
   #   else
   #     res.reply "Opening #{doorType} doors"
   #
-  # robot.hear /I like pie/i, (res) ->
-  #   res.emote "makes a freshly baked pie"
   #
   # lulz = ['lol', 'rofl', 'lmao']
   #
