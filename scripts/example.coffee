@@ -35,7 +35,7 @@ module.exports = (robot) ->
      res.emote "Vamos comer pastel!"
 	 
   robot.hear /Bom dia/i, (res) ->
-     res.emote "é a primeira vez que vem a minha casa e nem me trás uma chícara de café?"
+     res.emote "é a primeira vez que vem a minha casa e nem me trás uma xícara de café?"
 	 
   robot.hear /estou saindo/i, (res) ->
      res.emote "Vida longa e próspera"
